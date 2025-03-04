@@ -1,0 +1,8 @@
+-Iinclude
+-std=c99
+-Weverything
+-Werror
+-Wno-unsafe-buffer-usage
+-Wno-declaration-after-statement
+-Wno-covered-switch-default
+-pedantic-errors
