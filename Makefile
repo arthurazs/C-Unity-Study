@@ -1,11 +1,12 @@
 CC := clang
-CFLAGS := $(shell tail -n +2 compile_flags.txt)
-ALL_CFLAGS := -Iinclude -Ofast $(CFLAGS)
+CFLAGS := $(shell tail -n +3 compile_flags.txt)
 PROJECT := new_math
 SRC := src
 TEST := tests
+UNITY := $(TEST)/unity/src
+ALL_CFLAGS := -Iinclude -I$(UNITY) -Ofast $(CFLAGS)
 PREREQUISITES := $(SRC)/$(PROJECT).c
-TEST_PREREQUISITES := $(TEST)/test_$(PROJECT).c $(SRC)/unity.c
+TEST_PREREQUISITES := $(TEST)/test_$(PROJECT).c $(UNITY)/unity.c
 BIN := build
 TARGET_TEST := $(BIN)/$(PROJECT).out.test
 

@@ -1,4 +1,5 @@
 -Iinclude
+-Itests/unity/src
 -std=c99
 -Weverything
 -Werror
