@@ -1,6 +1,11 @@
 # C Study for unit testing with Unity
 
-Unity files are from [Unity](https://github.com/ThrowTheSwitch/Unity).
+Make sure to download this repo with the `recursive` flag.
+
+```bash
+$ git clone --depth 1 --recursive git@github.com:arthurazs/C-Unity-Study.git c-unity-study
+```
+
 CC set to clang.
 
 ```bash
